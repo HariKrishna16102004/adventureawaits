@@ -1,0 +1,1196 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+.home {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.12) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url(./images/david-marcu-78A265wPiO4-unsplash.jpg);
+  /* background-image:radial-gradient(circle, rgba(0,212,255,0.11817226890756305) 0%, rgba(15,7,16,0.499124649859944) 100%), url(./images/lake.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.backgroundofheading {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  background-image: url(./images/daniel-leone-g30P1zcOzXo-unsplash.jpg);
+  width: 100%;
+  height: 12vh;
+  z-index: 3;
+}
+nav {
+  z-index: 10;
+  position: absolute;
+  position: fixed;
+  top: 3%;
+  right: 2.5%;
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+nav ul li {
+  list-style-type: none;
+  border: 2.5px solid transparent;
+  /* margin: 10px; */
+  padding: 0.7rem;
+}
+nav ul li a {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 2rem;
+  /* color: rgb(206, 194, 194); */
+  color: white;
+  font-weight: bold;
+}
+nav ul li :hover {
+  box-shadow: 0 0 5px black;
+  border-radius: 1rem;
+  color: #3b6571;
+  /* color: white; */
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.quotes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -20vw;
+  top: -2vh;
+  margin: 0px 0rem;
+  z-index: 2;
+  color: white;
+  font-size: larger;
+  text-align: center;
+  /* font-family: "Calligraffitti", cursive; */
+}
+.quotes p {
+  width: 45%;
+  max-height: 50vh;
+  /* font-style: italic; */
+  font-family: dancing script;
+  font-size: 3.8rem;
+  font-weight: normal;
+}
+.home img {
+  position: absolute;
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  width: 13%;
+  z-index: 10;
+}
+
+.about_us {
+  background-color: #002724;
+  box-shadow: 0px 0px 20px black;
+  width: 90vw;
+  margin: 15vh 5vw;
+}
+.about_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 20vh;
+  position: relative;
+  background-color: black;
+  left: 10vw;
+  top: -10vh;
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url(./images/About_image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text_about_us {
+  color: antiquewhite;
+  font-size: 30px;
+}
+
+.about_content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box {
+  /* border: 2px solid white; */
+  width: 50%;
+  margin-bottom: 0.5rem;
+}
+.about_textcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.more_aboutus {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 2px solid coral;
+  font-size: 2.2rem;
+  border-radius: 1rem;
+}
+.more_aboutus a {
+  padding: 1rem;
+  color: rgb(239, 181, 93);
+  text-decoration: none;
+}
+.about_textcontent ul {
+  color: white;
+  margin-left: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+}
+.about_textcontent ul li {
+  line-height: 1.5rem;
+  margin: 15px 5px;
+}
+
+.images {
+  width: 45%;
+  margin-left: 5%;
+}
+
+.images img {
+  position: relative;
+  box-shadow: 0px 0px 100px black;
+}
+.indiagate img {
+  transform: translateY(7vw);
+  width: 20vw;
+  z-index: 2;
+}
+.paris img {
+  width: 15vw;
+  transform: translateX(18vw);
+  z-index: 1;
+}
+.wall img {
+  transform: translateY(-7vw);
+  width: 25vw;
+  z-index: 2;
+}
+.Tours {
+  width: 100%;
+}
+.header {
+  height: 35vh;
+  background-image: url(./images/filip-zrnzevic-Ceuh97A6OYM-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* display: flex;
+  justify-content: left;
+  align-items: center; */
+}
+.header p {
+  color: aliceblue;
+  font-size: 4rem;
+  position: relative;
+  left: 8%;
+  top: 30%;
+}
+.TrendingTours {
+  width: 80%;
+  position: relative;
+  top: -5vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 24% 24% 18% 25%;
+  column-gap: 2vh;
+  grid-template-rows: 25vh 15vh 25vh 25vh;
+  row-gap: 2vh;
+}
+.Gridboxes {
+  overflow: hidden;
+  box-shadow: 0 0 10px black;
+  border-radius: 0.5rem;
+  transition: all 0.5s;
+}
+.child:hover {
+  box-shadow: 0 0 10px black;
+  transform: scale(1.2);
+}
+.child:hover .hover {
+  transition: all 1s;
+  right: 0;
+}
+.child {
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  /* transform: scale(1.2); */
+}
+.c1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.c3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.c4 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.c5 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.c6 {
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.c7 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.child1 {
+  background-image: url(./images/tianshu-liu-SBK40fdKbAg-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.child div button {
+  margin-bottom: 2rem;
+}
+.child2 div h1 {
+  font-size: 2rem;
+}
+.child3 div h1 {
+  font-size: 2rem;
+}
+.child2 {
+  background-image: url(./images/todd-quackenbush-GMTx7uC6lNc-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.child3 {
+  background-image: url(./images/su-san-lee-E_eWwM29wfU-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.child5 {
+  background-image: url(./images/derek-thomson-TWoL-QCZubY-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.child6 {
+  background-image: url(./images/paris-2782145.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.child4 {
+  background-image: url(./images/alejandro-cartagena-B64B6-kAWlw-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.child7 {
+  background-image: url(./images/rei-kim-X5CyweAStIY-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hover {
+  width: 100%;
+  height: 92%;
+  top: 0;
+  right: -100%;
+  position: relative;
+  background-color: #1f3d4738;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-content: start; */
+  flex-direction: column;
+  padding: 1rem;
+  color: black;
+}
+.hover h1 {
+  /* color: rgb(138, 217, 189);
+  color: black; */
+  color: white;
+  font-size: 3rem;
+  /* position: relative; */
+  max-height: 20%;
+}
+.hover p {
+  max-height: 50%;
+  margin: 0 2rem !important;
+  /* position: relative; */
+  /* top: 5%; */
+}
+.booktour {
+  max-height: 20%;
+  /* margin-bottom: 0.5rem; */
+  cursor: pointer;
+  color: #002724;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 0 5px antiquewhite;
+  outline: none;
+  border: none;
+  background-color: rgb(138, 217, 189);
+  font-size: 1rem;
+  position: relative;
+  bottom: -20%;
+  transition: all 0.2s;
+}
+.booktour:hover {
+  transform: scale(1.2);
+}
+.child1 h1 {
+  top: 2rem;
+}
+
+.hover2 {
+  font-size: 80%;
+}
+.hover2 h1 {
+  font-size: 1.5rem;
+}
+.hover3 h1 {
+  font-size: 1.5rem;
+}
+.hover7 h1 {
+  font-size: 1.5rem;
+}
+
+.PopularTours {
+  width: 100vw;
+}
+
+.PopularTours .header {
+  width: 100vw;
+  height: 27vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-image: url(./images/jonatan-lewczuk-j7xzhsGeB5g-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.PopularTours .header p {
+  position: relative;
+  top: -8%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.PopularTours_grid {
+  position: relative;
+  top: -5vh;
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 2vh;
+  grid-template-rows: 30vh 30vh 30vh;
+  row-gap: 2vh;
+}
+
+.parent_grid {
+  box-shadow: 0 0 10px black;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.img:hover > div {
+  transition: all 0.5s;
+  right: 0;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.img1 {
+  background-image: url(./images/haridwar.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img2 {
+  background-image: url(./images/badrinath.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img4 {
+  background-image: url(./images/temples.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img3 {
+  background-image: url(./images/angkorwat.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img5 {
+  background-image: url(./images/norbert-braun-ih7Eq-11--E-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img6 {
+  background-image: url(./images/jovyn-chamb-PnlNR95vYNs-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img:hover {
+  transition: all 0.5s;
+  transform: scale(1.2);
+}
+
+.grid2 {
+  grid-column: 2/4;
+}
+
+.grid3 {
+  grid-column: 1/3;
+}
+
+.grid4 {
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+
+.child_grid {
+  background-color: #1f3d4738;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 0;
+  backdrop-filter: blur(5px);
+  position: relative;
+  right: -110%;
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+.child_grid h1 {
+  color: white;
+}
+.child_grid p {
+  width: 80%;
+
+  margin-left: 2rem;
+}
+.img6 .child_grid,
+.img5 .child_grid {
+  padding: -1rem 0;
+}
+.img6 .child_grid h1,
+.img5 .child_grid h1 {
+  font-size: 140%;
+}
+.img6 .child_grid p,
+.img5 .child_grid p {
+  font-size: 60%;
+}
+.Trad {
+  width: 90%;
+  margin: auto;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Trad button {
+  margin-bottom: 1rem;
+}
+.Trad1 {
+  margin: auto auto;
+  font-size: 75% !important;
+}
+.Reviews {
+  box-shadow: 0 0 10px black;
+  border-radius: 1rem;
+  margin-top: 20vh;
+  margin: auto;
+  width: 80vw;
+  height: 90vh;
+  background-image: url(./images/About_image.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.review1 {
+  grid-column: 1/3;
+  margin-top: 5%;
+}
+.review2 {
+  justify-content: left !important ;
+  align-items: center;
+}
+.review4 {
+  margin-bottom: 2vh;
+}
+.review5 {
+  margin-bottom: 2vh;
+}
+.content1 {
+  width: 30vw !important;
+  margin: auto;
+}
+.content2 {
+  margin-left: 5%;
+}
+.content4 {
+  margin-left: 30%;
+}
+.content3 {
+  margin-left: 32%;
+}
+.content5 {
+  margin-left: 5%;
+}
+
+.boxgrid {
+  border-radius: 1rem;
+  width: 25vw;
+  height: 70%;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+.imgs {
+  box-shadow: 0 0 10px black;
+  margin-left: 1rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.imgs1 {
+  background-image: url(./images/Ranveer_Singh_in_2023_\(1\)_\(cropped\).jpg);
+}
+.imgs2 {
+  background-image: url(./images/Rajamouli_insta.jpg);
+}
+.imgs3 {
+  background-image: url(./images/priyanka_chopra.webp);
+}
+.imgs4 {
+  background-image: url(./images/sunidhi.jpg);
+}
+.imgs5 {
+  background-image: url(./images/ram_charan.jpg);
+}
+.actorreview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+}
+.actorreview p {
+  font-size: 0.8rem;
+}
+
+#Tours {
+  height: 4rem;
+}
+#About_Us {
+  height: 2rem;
+}
+
+.reviewheading {
+  box-shadow: 0 0 10px black;
+  border-radius: 1rem;
+  height: 10vh;
+  box-shadow: 0 0 10px solid;
+  position: absolute;
+  width: 50%;
+  margin: 0 15%;
+  margin-top: -8vh;
+  background-image: url(./images/tianshu-liu-SBK40fdKbAg-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviewheading p {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.Contact_US {
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px black;
+  background-image: url(./images/daniel-leone-g30P1zcOzXo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90vw;
+  /* height: 90vh; */
+  padding: 2rem;
+}
+.Contact_heading {
+  padding: 1rem;
+  box-shadow: 0 0 100px black;
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  width: 23%;
+  color: white;
+}
+.Contact_content {
+  height: 29rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Contact_content .locations {
+  width: 25rem;
+  height: 80%;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px black;
+  background-image: url(./images/india-Map-01.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Contact_content .locations p {
+  font-size: larger;
+  font-weight: 600;
+  position: relative;
+  left: 60%;
+  top: 90%;
+  z-index: 2;
+}
+.Contact_content .form {
+  padding: 2rem;
+  width: 40%;
+}
+.Contact_content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form input {
+  box-shadow: 0 0 10px black;
+  padding: 1.5rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  height: 2rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+form textarea {
+  box-shadow: 0 0 10px black;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.information {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+}
+.information p {
+  color: white;
+  font-size: 1.5rem;
+}
+.Form_submit {
+  padding: 0.35rem;
+  margin-top: 1rem;
+  width: 10rem;
+}
+footer {
+  width: 100vw;
+  height: 10vh;
+  margin-top: 2rem;
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(./images/daniel-leone-g30P1zcOzXo-unsplash.jpg);
+  /* background-position: center; */
+  background-size: cover;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logos {
+  color: white;
+  margin-right: 3rem;
+  width: 30vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+ion-icon {
+  color: white;
+  font-size: 2rem;
+}
+
+.copyright p {
+  display: inline-block;
+  color: white;
+  font-size: 1rem;
+  margin: auto;
+}
+.copyright {
+  color: white;
+  margin-left: 2rem;
+}
+.copyright object {
+  color: white;
+  size: 80%;
+  position: relative;
+  top: 0.5rem;
+}
+@media screen and (max-width: 850px) {
+  .actorreview p {
+    font-size: 00.8rem;
+  }
+
+  .Reviews {
+    width: 94vw;
+  }
+
+  .TrendingTours {
+    width: 94vw;
+  }
+
+  .PopularTours_grid {
+    width: 96vw;
+  }
+}
+
+@media screen and (max-width: 325px)
+{
+.TrendingTours {
+    width: 98%;
+    position: relative;
+    top: -5vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Gridboxes {
+    width: 100% !important;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+  }
+  
+}
+
+@media screen and (max-width: 750px) {
+  .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 48%;
+    height: 100%;
+    margin-left: 2%;
+    float: left;
+  }
+
+  .about_content {
+    display: block;
+  }
+  .about_textcontent div ul li {
+    font-size: 0.8rem;
+  }
+
+  .images img {
+    position: static;
+    box-shadow: 0px 0px 100px black;
+    margin-bottom: 3rem;
+  }
+  .indiagate img {
+    transform: translateY(0vw);
+    width: 90%;
+    z-index: 0;
+  }
+  .paris img {
+    width: 90%;
+    transform: translateX(0vw);
+    z-index: 0;
+  }
+  .wall img {
+    transform: translateY(0vw);
+    width: 90%;
+    z-index: 0;
+  }
+  .TrendingTours {
+    width: 98%;
+    position: relative;
+    top: -5vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Gridboxes {
+    width: 46%;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+  }
+  .child:hover {
+    box-shadow: 0 0 10px black;
+    transform: scale(1.2);
+  }
+  .child:hover .hover {
+    transition: all 1s;
+    right: 0;
+  }
+  .child {
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    /* transform: scale(1.2); */
+    background-size: content !important;
+  }
+  .child1 {
+    background-image: url(./images/tianshu-liu-SBK40fdKbAg-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .child div button {
+    margin-bottom: 2rem;
+  }
+  .child2 div h1 {
+    font-size: 2rem;
+  }
+  .child3 div h1 {
+    font-size: 2rem;
+  }
+  .child2 {
+    background-image: url(./images/todd-quackenbush-GMTx7uC6lNc-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: content;
+  }
+  .child3 {
+    background-image: url(./images/su-san-lee-E_eWwM29wfU-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .c1 {
+    width: 100%;
+    order: 0;
+  }
+  .c2 {
+    order: 1;
+  }
+  .c3 {
+    order: 2;
+  }
+  .c4 {
+    order: 4;
+  }
+  .c6 {
+    order: 5;
+  }
+  .c7 {
+    order: 6;
+    width: 100%;
+  }
+  .c5 {
+    width: 100%;
+    order: 3;
+  }
+
+  .PopularTours_grid {
+    position: relative;
+    top: -5vh;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .img1 {
+    display: none;
+  }
+
+  .Reviews {
+    box-shadow: 0 0 10px black;
+    border-radius: 1rem;
+    margin-top: 20vh;
+    margin: auto;
+    width: 90vw;
+    height: 90vh;
+    background-image: url(./images/About_image.jpg);
+    background-position: center;
+    background-size: cover;
+    display: block;
+  }
+
+  .review1 {
+    margin-top: 5%;
+  }
+  .review2 {
+    justify-content: left !important ;
+    align-items: center;
+  }
+  .review4 {
+    margin-bottom: 2vh;
+  }
+  .review5 {
+    margin-bottom: 2vh;
+  }
+  .content1 {
+    width: 75% !important;
+    float: left;
+    margin: 0.5rem 1rem;
+  }
+  .content2 {
+    width: 75% !important;
+    float: right;
+    margin: 0.5rem 1rem;
+  }
+  .content4 {
+    width: 75% !important;
+    margin: 0.5rem 1rem;
+    float: right;
+  }
+  .content3 {
+    width: 75% !important;
+    margin: 0.5rem 1rem;
+    float: left;
+  }
+  .content5 {
+    width: 75% !important;
+    margin: 0.5rem 1rem;
+    float: left;
+  }
+  .Contact_heading {
+    padding: 1rem;
+    box-shadow: 0 0 100px black;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+    width: 100%;
+    color: white;
+  }
+  .Contact_content {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Contact_content .locations {
+    width: 100%;
+    height: 16rem;
+  }
+  .Contact_content .locations p {
+    font-size: larger;
+    font-weight: 600;
+    position: relative;
+    left: 47%;
+    top: 90%;
+    z-index: 1;
+  }
+  .Contact_content .form {
+    padding: 2rem;
+    width: 100%;
+  }
+  .Contact_content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+  }
+  footer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logos {
+    order: -1;
+    margin-top: 0rem;
+    color: white;
+    margin-right: 0;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyright {
+    margin-top: 0.5rem;
+  }
+  .copyright object {
+    display: none;
+  }
+  .quotes {
+    position: static;
+    justify-items: center;
+    margin: auto;
+  }
+  .quotes p {
+    font-size: 2.5rem !important;
+  }
+  .hover1 p {
+    margin-top: 2rem !important;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    width: 150vw;
+    background-image: url(./images/daniel-leone-g30P1zcOzXo-unsplash.jpg);
+    position: absolute;
+    position: fixed;
+    top: 5rem;
+    left: -50%;
+    z-index: 2;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+  }
+  .home img {
+    width: 10rem !important;
+  }
+  .navbar-toggle {
+    display: grid !important;
+  }
+
+  .more_aboutus {
+    width: fit-content;
+    margin: 2rem auto;
+    margin-bottom: 2rem;
+    border: 2px solid coral;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+  }
+  .more_aboutus a {
+    padding: 1rem;
+    color: rgb(239, 181, 93);
+    text-decoration: none;
+  }
+  
+
+}
+
+.navbar-toggle {
+  position: absolute;
+  position: fixed;
+  top: 0.5rem;
+  right:10vw ;
+  z-index: 5;
+  display: none;
+  height: min-content;
+  margin: 18px -10px 0 0;
+  cursor: pointer;
+}
+.navbar-toggle .bar {
+  z-index: 5;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: white !important;
+  border-radius: 10%;
+  transition: .4s;
+}
+.home input{
+  display: none;
+}
+.home input:checked ~ nav
+{
+  transform: translateY(0);
+}
+.home input:checked ~ .navbar-toggle {
+  margin-top: 35px;
+} 
+.home input:checked ~ .navbar-toggle .bar:nth-child(1) {
+  position: absolute;
+  transform: rotate(45deg);
+}
+.home input:checked ~ .navbar-toggle .bar:nth-child(2) {
+ display: none;
+}
+.home input:checked ~ .navbar-toggle .bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
